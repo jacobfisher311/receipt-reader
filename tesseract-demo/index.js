@@ -1,5 +1,7 @@
 /**********************************************************
- * To run, type in terminal: node index.js [imagepath]
+ * To run, type in terminal: 
+ *                           npm i
+ *                           node index.js [imagepath]
  *********************************************************/
 import path from 'path'
 import analyze_receipt from './analyze-receipt.js';
