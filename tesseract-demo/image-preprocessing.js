@@ -37,7 +37,6 @@ async function individualText() {
 
           if (l.words[j].confidence > 10)
           {  
-            console.log("line: " + i + ": " + l.words[j].confidence);
               try
               {
                   await pic.scan(l.words[j].bbox.x0, l.words[j].bbox.y0 - 1, w + 1, 1, funcy(0xFF0000FF)).writeAsync(boxesImage); // top

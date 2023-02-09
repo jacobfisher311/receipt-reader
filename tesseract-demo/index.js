@@ -16,7 +16,9 @@ try
   
   let contrastedImage = await colorContrast(imagePath);
   let boxes = await individualText(contrastedImage);
-  await analyze_receipt("receipts/preprocessedImage.jpg");
+  let arr = await analyze_receipt("receipts/preprocessedImage.jpg");
+  
+  console.log(arr);
 }
 catch(err)
 {
